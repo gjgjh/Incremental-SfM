@@ -1,0 +1,54 @@
+%YAML:1.0
+
+# ====================basic====================
+# data directory
+image_dir: "/Users/huiguo/Desktop/south-building/south-building/images"
+database_path: "/Users/huiguo/Desktop/south-building/south-building/images/database.db"
+output_dir: "/Users/huiguo/Desktop/south-building/south-building/images"
+
+# pinhole camera parameters
+camera.fx: 2559.68
+camera.fy: 2559.68
+camera.cx: 1536
+camera.cy: 1152
+
+camera.k1: -0.0204997
+camera.k2: 0.0
+camera.p1: 0.0
+camera.p2: 0.0
+
+# ============feature extraction==================
+# maximum image size
+# If image exceeds this size, then feature extraction will be performed on the down-sampled image.
+max_image_size: 3200
+
+# maximum number of extracted features
+max_num_features: 8000
+
+# ==================matching=======================
+# match type: 0 for sequential match, 1 for brute match, 2 for vacabulary tree match
+match_type: 0
+
+# ratio test
+ratio_thresh: 0.7
+
+# If descriptor is normalized, then distance between two descriptors is in range [0.0, 2.0].
+# If the distance between feature descriptors greater than this threshold, then it's a incorrect match.
+distance_thresh: 0.7
+
+# The matching is considered successful only if the number of matches is greater than min_num_matches.
+min_num_matches: 15
+
+# 0: not use cross check, 1: use cross check
+cross_check: 1
+
+# sequential matcher
+# Match each picture with the next `overlap` pictures.
+sequential.overlap: 3
+
+# ==================optimizing=======================
+# frames between each local BA optimization
+localOptInterval: 1
+
+# when the model size increases by a certain ratio, then perform global BA
+globalOptRatio: 1.5
