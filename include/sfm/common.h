@@ -24,7 +24,7 @@
 #include <thread>
 using namespace std;
 
-// // for eigen
+// for eigen
 #include <Eigen/Core>
 #include <Eigen/Geometry>
 

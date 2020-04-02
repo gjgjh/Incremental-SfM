@@ -6,7 +6,7 @@ Similar to [ORBSLAM](https://github.com/raulmur/ORB_SLAM2), the initialization p
 
 Note that this code is relatively simple, mainly for learning use. I will optimize this program in the future to improve the accuracy.
 
-![](https://tva1.sinaimg.cn/large/00831rSTgy1gd8mimo61dj316y0u0npe.jpg)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gdfj6jodzrg30uk0m8npi.gif)
 
 ## 1 Prerequisites
 

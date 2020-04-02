@@ -73,6 +73,7 @@ void Triangulator::triangulateMultiviews(const vector<cv::Point2f> &points2d, co
     int numViews = points2d.size();
     assert(numViews >= 2 && numViews == Ps.size());
 
+    // solve Ax=0, x is the eigenvector of ATA corresponding to the smallest eigenvalue
     cv::Mat A = cv::Mat::zeros(4, 4, CV_64F);
     for (size_t i = 0; i < numViews; ++i) {
         cv::Mat P = Ps[i];
