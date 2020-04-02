@@ -6,7 +6,7 @@ Similar to [ORBSLAM](https://github.com/raulmur/ORB_SLAM2), the initialization p
 
 Note that this code is relatively simple, mainly for learning use. I will optimize this program in the future to improve the accuracy.
 
-![](https://tva1.sinaimg.cn/large/00831rSTgy1gdfj6jodzrg30uk0m8npi.gif)
+<img src="https://github.com/gjgjh/Incremental-SfM/blob/master/support_files/pointcloud.gif" width = 70% height = 70% />
 
 ## 1 Prerequisites
 
